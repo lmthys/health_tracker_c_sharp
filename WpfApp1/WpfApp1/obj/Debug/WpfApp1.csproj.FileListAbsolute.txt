@@ -36,3 +36,8 @@ C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\obj\Debug\Wp
 C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
 C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\obj\Debug\WpfApp1.exe
 C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\bin\Debug\System.Data.SQLite.dll
+C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\bin\Debug\System.Data.SQLite.xml
+C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\obj\Debug\Feeling.g.cs
+C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\obj\Debug\Feeling.baml
+C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CopyComplete

@@ -32,7 +32,7 @@ namespace WpfApp1
 
         private void Feeling_tracker_Click(object sender, RoutedEventArgs e)
         {
-
+            this.NavigationService.Navigate(new Feeling());
         }
 
         private void Exercise_tracker_Click(object sender, RoutedEventArgs e)
