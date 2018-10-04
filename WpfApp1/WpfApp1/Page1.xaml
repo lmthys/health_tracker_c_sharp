@@ -9,11 +9,11 @@
       Title="Page1">
 
     <Grid>
-        <TextBlock x:Name="main_Title" HorizontalAlignment="Center" Margin="291,154,251,231.6" TextWrapping="Wrap" VerticalAlignment="Center" Height="64" Width="258" FontSize="22" TextAlignment="Center"><Run Text="&#x9;TextBox"/><LineBreak/><Run/></TextBlock>
-        <Button x:Name="feeling_tracker" Content="Feeling Tracker" HorizontalAlignment="Left" Margin="549,195,0,0" VerticalAlignment="Top" Width="100" Height="36" Click="Feeling_tracker_Click"/>
-        <Button x:Name="exercise_tracker" Content="Exercise Tracker" HorizontalAlignment="Left" Margin="549,249,0,0" VerticalAlignment="Top" Width="100" Height="35" Click="Exercise_tracker_Click"/>
-        <Button x:Name="Sleep_Tracker" Content="Sleep Tracker" HorizontalAlignment="Left" Margin="549,309,0,0" VerticalAlignment="Top" Width="100" Height="34" Click="Sleep_Tracker_Click"/>
-        <Button x:Name="Food_Tracker" Content="Food Tracker" HorizontalAlignment="Left" Margin="549,363,0,0" VerticalAlignment="Top" Width="100" Height="34" Click="Food_Tracker_Click"/>
-        <DataGrid x:Name="Overall_data" HorizontalAlignment="Left" Height="174" Margin="327,223,0,0" VerticalAlignment="Top" Width="190" SelectionChanged="DataGrid_SelectionChanged" RenderTransformOrigin="0.69,0.294"/>
+        <TextBlock x:Name="main_Title" HorizontalAlignment="Center" Margin="321,84,151,306.6" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="22" TextAlignment="Center" Width="328"><Run Text="TextBox"/><LineBreak/><Run/></TextBlock>
+        <Button x:Name="feeling_tracker" Content="Feeling Tracker" HorizontalAlignment="Left" Margin="549,143,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="Feeling_tracker_Click"/>
+        <Button x:Name="exercise_tracker" Content="Exercise Tracker" HorizontalAlignment="Left" Margin="549,202,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="Exercise_tracker_Click"/>
+        <Button x:Name="Sleep_Tracker" Content="Sleep Tracker" HorizontalAlignment="Left" Margin="549,261,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="Sleep_Tracker_Click"/>
+        <Button x:Name="Food_Tracker" Content="Food Tracker" HorizontalAlignment="Left" Margin="549,323,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="Food_Tracker_Click"/>
+        <DataGrid x:Name="Overall_data" HorizontalAlignment="Left" Height="220" Margin="321,143,0,0" VerticalAlignment="Top" Width="190" SelectionChanged="DataGrid_SelectionChanged" RenderTransformOrigin="0.69,0.294"/>
     </Grid>
 </Page>
