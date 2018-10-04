@@ -27,7 +27,8 @@ namespace WpfApp1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Page1(), user_name.Text);
+            Page1 p = new Page1(user_name.Text);
+            this.NavigationService.Navigate(p);
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)

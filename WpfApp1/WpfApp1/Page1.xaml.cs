@@ -20,20 +20,39 @@ namespace WpfApp1
     /// </summary>
     public partial class Page1 : Page
     {
-        public Page1()
+        
+        public Page1(string text)
         {
             InitializeComponent();
-        }
-        protected void Page_Load(object sender, EventArgs e)
-        {
-            string text = e.ToString();
-            main_Title.Text = "Hi," + text;
-        }
-        void NavigationService_LoadCompleted(object sender, NavigationEventArgs e)
-        {
-            
-            
+            if(text != null)
+            {
+                main_Title.Text = "Hi, "+text;
+            }
         }
 
+        private void Feeling_tracker_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Exercise_tracker_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Sleep_Tracker_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Food_Tracker_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
