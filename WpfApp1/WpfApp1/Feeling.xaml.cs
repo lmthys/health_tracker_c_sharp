@@ -21,32 +21,35 @@ namespace WpfApp1
     /// </summary>
     public partial class Feeling : Page
     {
+        private double value; 
         public Feeling()
         {
             InitializeComponent();
+            value = 0.0;
         }
 
         private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            // temp
-            SQLiteConnection.CreateFile("MyDatabase.sqlite");
-            SQLiteConnection m_dbConnection;
-            m_dbConnection = new SQLiteConnection("Data Source=MyDatabase.sqlite;Verion=3;");
-            m_dbConnection.Open();
-            string sql = "create table feeling_table (date varchar(20), score int)";
-            SQLiteCommand c = new SQLiteCommand(sql, m_dbConnection);
-            c.ExecuteNonQuery();
-            // staying forever
-            string sql_1 = "insert into feeling_table (date, score) values (" + DateTime.Now.ToString() + "," + slider.Value + ")";
-            c = new SQLiteCommand(sql_1, m_dbConnection);
-            c.ExecuteNonQuery();
 
+            value = slValue.Value;
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+    
+        private void Submit_Butt_Click(object sender, RoutedEventArgs e)
         {
+            // temp
+            SQLiteConnection m_dbConnection;
+            m_dbConnection = new SQLiteConnection("Data Source=MyDatabase.sqlite;Verion=3;");
+            m_dbConnection.Open();
+            // staying forever
+            string sql_1 = "insert into feeling_table (date, score) values (" + "\"" + DateTime.Now.ToString() + "\"" + "," + value + ");";
+            SQLiteCommand c = new SQLiteCommand(sql_1, m_dbConnection);
+            c.ExecuteNonQuery();
+            m_dbConnection.Close();
 
+            Page1 p = new Page1("Larisa");
+            this.NavigationService.Navigate(p);
         }
     }
 }

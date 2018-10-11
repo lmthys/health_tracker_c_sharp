@@ -9,8 +9,13 @@
       Title="Feeling">
 
     <Grid>
-        <Slider Name="slider" HorizontalAlignment="Center" Margin="351,324,81,91.6" VerticalAlignment="Center" Height="34" Width="368" ValueChanged="Slider_ValueChanged"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="496,387,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <DockPanel VerticalAlignment="Center" Margin="10">
+            <TextBox Text="{Binding ElementName=slValue, Path=Value, UpdateSourceTrigger=PropertyChanged}" DockPanel.Dock="Right" TextAlignment="Right" Width="40" />
+            <Slider Maximum="10" TickPlacement="BottomRight" TickFrequency=".5" IsSnapToTickEnabled="True" Name="slValue" ValueChanged="Slider_ValueChanged"/>
+        </DockPanel>
+        <Button Content="Submit"  Click="Submit_Butt_Click" HorizontalAlignment="Left" Margin="365,293,0,0" VerticalAlignment="Top" Width="75"/>
+
+
 
     </Grid>
 </Page>
