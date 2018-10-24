@@ -43,7 +43,7 @@ namespace WpfApp1
             m_dbConnection = new SQLiteConnection("Data Source=MyDatabase.sqlite;Verion=3;");
             m_dbConnection.Open();
             // staying forever
-            string sql_1 = "insert into feeling_table (date, score) values (" + "\"" + DateTime.Now.ToString() + "\"" + "," + value + ");";
+            string sql_1 = "insert into feeling_table (date, feeling_score) values (" + "\"" + DateTime.Now.ToString() + "\"" + "," + value + ");";
             SQLiteCommand c = new SQLiteCommand(sql_1, m_dbConnection);
             c.ExecuteNonQuery();
             m_dbConnection.Close();
