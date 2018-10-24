@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SQLite;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,6 +30,7 @@ namespace WpfApp1
             {
                 main_Title.Text = "Hi, "+text;
             }
+            Fill();
         }
 
         private void Feeling_tracker_Click(object sender, RoutedEventArgs e)
@@ -47,12 +50,30 @@ namespace WpfApp1
 
         private void Food_Tracker_Click(object sender, RoutedEventArgs e)
         {
-
+           
         }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+           
 
+
+        }
+        private void Fill()
+        {
+            SQLiteConnection m_dbConnection;
+            m_dbConnection = new SQLiteConnection("Data Source=MyDatabase.sqlite;Verion=3;");
+            m_dbConnection.Open();
+
+            string sql = "select * from feeling_table;";
+            SQLiteCommand c = new SQLiteCommand(sql, m_dbConnection);
+
+            using (SQLiteDataAdapter dataApapter = new SQLiteDataAdapter(c))
+            {
+                DataTable dataTable = new DataTable();
+                dataApapter.Fill(dataTable);
+                this.Overall_data.ItemsSource = dataTable.AsDataView();
+            }
         }
     }
 }

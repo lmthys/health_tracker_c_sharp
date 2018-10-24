@@ -14,6 +14,6 @@
         <Button x:Name="exercise_tracker" Content="Exercise Tracker" HorizontalAlignment="Left" Margin="549,202,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="Exercise_tracker_Click"/>
         <Button x:Name="Sleep_Tracker" Content="Sleep Tracker" HorizontalAlignment="Left" Margin="549,261,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="Sleep_Tracker_Click"/>
         <Button x:Name="Food_Tracker" Content="Food Tracker" HorizontalAlignment="Left" Margin="549,323,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="Food_Tracker_Click"/>
-        <DataGrid x:Name="Overall_data" HorizontalAlignment="Left" Height="220" Margin="321,143,0,0" VerticalAlignment="Top" Width="190" SelectionChanged="DataGrid_SelectionChanged" RenderTransformOrigin="0.69,0.294"/>
+        <DataGrid x:Name="Overall_data" HorizontalAlignment="Left" Height="220" Margin="321,143,0,0" VerticalAlignment="Top" Width="207" SelectionChanged="DataGrid_SelectionChanged" RenderTransformOrigin="0.69,0.294"/>
     </Grid>
 </Page>
