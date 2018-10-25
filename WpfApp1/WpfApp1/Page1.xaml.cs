@@ -45,6 +45,7 @@ namespace WpfApp1
 
         private void Sleep_Tracker_Click(object sender, RoutedEventArgs e)
         {
+            this.NavigationService.Navigate(new Sleeping());
 
         }
 
@@ -65,12 +66,23 @@ namespace WpfApp1
             m_dbConnection = new SQLiteConnection("Data Source=MyDatabase.sqlite;Verion=3;");
             m_dbConnection.Open();
 
+            DataTable dataTable;
+
             string sql = "select * from feeling_table;";
             SQLiteCommand c = new SQLiteCommand(sql, m_dbConnection);
 
             using (SQLiteDataAdapter dataApapter = new SQLiteDataAdapter(c))
             {
-                DataTable dataTable = new DataTable();
+                dataTable = new DataTable();
+                dataApapter.Fill(dataTable);
+                this.Overall_data.ItemsSource = dataTable.AsDataView();
+            }
+
+            sql = "select * from sleeping_table;";
+            c = new SQLiteCommand(sql, m_dbConnection);
+
+            using (SQLiteDataAdapter dataApapter = new SQLiteDataAdapter(c))
+            {
                 dataApapter.Fill(dataTable);
                 this.Overall_data.ItemsSource = dataTable.AsDataView();
             }

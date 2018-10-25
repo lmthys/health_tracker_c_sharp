@@ -41,3 +41,4 @@ C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\bin\Debug\Sy
 C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\obj\Debug\Feeling.g.cs
 C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\obj\Debug\Feeling.baml
 C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CopyComplete
+C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\obj\Debug\Sleeping.g.cs

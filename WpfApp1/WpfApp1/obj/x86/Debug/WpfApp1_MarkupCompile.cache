@@ -4,7 +4,7 @@
 winexe
 C#
 .cs
-C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\obj\Debug\
+C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\obj\x86\Debug\
 WpfApp1
 none
 false
@@ -12,9 +12,9 @@ DEBUG;TRACE
 C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\App.xaml
 5-975636939
 
-13-368904979
+91368831915
 14-1430478035
 Feeling.xaml;Login.xaml;MainScreen.xaml;Page1.xaml;Sleeping.xaml;
 
-True
+False
 
