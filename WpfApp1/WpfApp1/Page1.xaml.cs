@@ -40,7 +40,7 @@ namespace WpfApp1
 
         private void Exercise_tracker_Click(object sender, RoutedEventArgs e)
         {
-
+            this.NavigationService.Navigate(new Exercise());
         }
 
         private void Sleep_Tracker_Click(object sender, RoutedEventArgs e)
@@ -51,7 +51,7 @@ namespace WpfApp1
 
         private void Food_Tracker_Click(object sender, RoutedEventArgs e)
         {
-           
+            this.NavigationService.Navigate(new Eating()); 
         }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -79,6 +79,24 @@ namespace WpfApp1
             }
 
             sql = "select * from sleeping_table;";
+            c = new SQLiteCommand(sql, m_dbConnection);
+
+            using (SQLiteDataAdapter dataApapter = new SQLiteDataAdapter(c))
+            {
+                dataApapter.Fill(dataTable);
+                this.Overall_data.ItemsSource = dataTable.AsDataView();
+            }
+
+            sql = "select * from exercise_table;";
+            c = new SQLiteCommand(sql, m_dbConnection);
+
+            using (SQLiteDataAdapter dataApapter = new SQLiteDataAdapter(c))
+            {
+                dataApapter.Fill(dataTable);
+                this.Overall_data.ItemsSource = dataTable.AsDataView();
+            }
+
+            sql = "select * from eating_table;";
             c = new SQLiteCommand(sql, m_dbConnection);
 
             using (SQLiteDataAdapter dataApapter = new SQLiteDataAdapter(c))
