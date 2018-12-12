@@ -28,3 +28,15 @@ C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\obj\x86\Debu
 C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\obj\x86\Debug\Exercise.baml
 C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\obj\x86\Debug\Eating.g.cs
 C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\obj\x86\Debug\Eating.baml
+C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\bin\x86\Debug\OxyPlot.dll
+C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\bin\x86\Debug\OxyPlot.Wpf.dll
+C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\bin\x86\Debug\OxyPlot.pdb
+C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\bin\x86\Debug\OxyPlot.xml
+C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\bin\x86\Debug\OxyPlot.Wpf.pdb
+C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\bin\x86\Debug\OxyPlot.Wpf.xml
+C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\bin\x86\Debug\LiveCharts.dll
+C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\bin\x86\Debug\LiveCharts.Wpf.dll
+C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\bin\x86\Debug\LiveCharts.pdb
+C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\bin\x86\Debug\LiveCharts.xml
+C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\bin\x86\Debug\LiveCharts.Wpf.pdb
+C:\Users\lmand\Documents\490\health_tracker_c_sharp\WpfApp1\WpfApp1\bin\x86\Debug\LiveCharts.Wpf.xml

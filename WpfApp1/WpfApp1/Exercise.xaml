@@ -10,9 +10,9 @@
 
     <Grid Margin="45,0,10,-0.4">
         <TextBlock HorizontalAlignment="Left" Margin="220,164,0,0" TextWrapping="Wrap" Text="How long have you worked out for today?" VerticalAlignment="Top" FontSize="16"/>
-        <TextBox x:Name="WorkoutMinutes" HorizontalAlignment="Left" Height="23" Margin="294,285,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="WorkoutMinutes_TextChanged"/>
-        <TextBlock HorizontalAlignment="Left" Margin="323,229,0,0" TextWrapping="Wrap" Text="In Minutes" VerticalAlignment="Top"/>
-        <Button x:Name="Submit_Butt" Content="Submit" HorizontalAlignment="Left" Margin="294,336,0,0" VerticalAlignment="Top" Width="120" Height="29" Click="Submit_Butt_Click"/>
+        <TextBox x:Name="WorkoutMinutes" HorizontalAlignment="Left" Height="23" Margin="309,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="WorkoutMinutes_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="336,219,0,0" TextWrapping="Wrap" Text="In Minutes" VerticalAlignment="Top" RenderTransformOrigin="1.352,0.194"/>
+        <Button x:Name="Submit_Butt" Content="Submit" HorizontalAlignment="Left" Margin="309,336,0,0" VerticalAlignment="Top" Width="120" Height="29" Click="Submit_Butt_Click"/>
 
     </Grid>
 </Page>
